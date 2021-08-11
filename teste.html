@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>
+		Check if an element is a div in JavaScript.
+	</title>
+	<style>
+		#div {
+			background: green;
+			height: 100px;
+			width: 200px;
+			margin: 0 auto;
+			color: white;
+		}
+	</style>
+</head>
+
+<body style="text-align:center;">
+	<h1 style="color:green;" onClick="GFG_Fun(this.tagName)">
+			GeeksForGeeks
+		</h1>
+	<p id="GFG_UP" onClick="GFG_Fun(this.tagName)">
+	</p>
+	<div id="div" onClick="GFG_Fun(this.tagName)">
+		This is Div element.
+	</div>
+	<p id="GFG_DOWN" style="color: green;">
+	</p>
+	<script>
+		var up = document.getElementById('GFG_UP');
+		var down = document.getElementById('GFG_DOWN');
+		up.innerHTML =
+		"Click on any element to check if it's DIV or not.";
+
+		function GFG_Fun(tagName) {
+			// checking if the tagName is equal to 'DIV'.
+			if (tagName == 'DIV') {
+				down.innerHTML = "It's a DIV Element";
+			} else {
+				down.innerHTML = "It's not a DIV Element";
+			}
+		}
+	</script>
+</body>
+
+</html>

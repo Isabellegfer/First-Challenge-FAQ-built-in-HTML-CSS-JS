@@ -30,7 +30,10 @@ h1{
 }
 h4{
     margin-top: 5px;
+    margin-bottom: 5px;
     position: relative;
+    width: auto;
+    display: inline-block;
 }
 h4:hover {
     color: coral;
